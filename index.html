@@ -140,6 +140,12 @@
   }
   @keyframes badge-blink{0%,100%{opacity:1;} 50%{opacity:0.35;}}
 
+  .status-badge{
+    display:inline-block; background:var(--blue); color:#fff; font-size:10px;
+    font-weight:700; padding:2px 8px; border-radius:20px; margin-left:8px;
+    vertical-align:middle;
+  }
+
   .mood-chip{
     display:inline-flex; align-items:center; gap:6px; margin-top:22px;
     background:rgba(255,175,235,0.3); border:1px solid var(--line); border-radius:20px;
@@ -653,7 +659,7 @@
       </div>
       <div class="proj-card">
         <span class="num">05</span>
-        <h3>Tabby<span class="new-badge">WORK IN PROGRESS</span></h3>
+        <h3>Tabby<span class="status-badge">WORK IN PROGRESS</span></h3>
         <p>- An expense tracking app, but without the complication of counting by yourself.</p>
         <p>- Designed with simplicity in the image of a cat - hence the name Tabby.</p>
         <p>- Always improving in design and accessibility.</p>
